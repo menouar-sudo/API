@@ -28,3 +28,4 @@ response.raise_for_status()  # VERY important
 img = Image.open(BytesIO(response.content))
 img.load()   # force validation
 img.show()
+print("im adding this from my home pc to test git")
