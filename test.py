@@ -1,4 +1,9 @@
+from pokemon.repositories import APIPokemonRepository
 
 
-test = input("Enter something: ")
-print("You entered:", test)
+class TestAPIPokemonRepository:
+    def test_fetch_all_pokemons(self):
+
+        repository = APIPokemonRepository()
+
+        pokemons = repository.fetch_all_pokemons()
